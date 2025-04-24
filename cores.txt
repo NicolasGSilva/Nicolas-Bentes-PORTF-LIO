@@ -1,0 +1,29 @@
+🎨 Paleta de Cores - Estilo Crunchyroll com Azul Royal
+🔵 Cor Principal (Azul Royal)
+#2B3691 – Azul Royal
+⚪ Cores Neutras (Background e Texto)
+#F8F9FA – Branco Gelo (background principal)
+#E9ECEF – Cinza Claro (cards, bordas leves)
+#343A40 – Cinza Escuro (texto principal)
+#6C757D – Cinza Médio (texto secundário, ícones)
+
+🟠 Cores de Ação (Inspiradas em botões e destaques estilo Crunchyroll)
+#FF6F00 – Laranja Vibrante (para botões principais, chamadas)
+#FFD54F – Amarelo Claro (hover, destaques suaves)
+
+🔷 Cores Secundárias (Tons de azul e contraste)
+#264de4 – Azul Escuro (hover ou sombras do azul royal)
+#A7C7E7 – Azul Pastel (destaques suaves ou background alternativo)
+🟩 Cores de Suporte (Status, alertas etc.)
+#4CAF50 – Verde Suave (sucesso)
+#F44336 – Vermelho Alerta (erro)
+#FFC107 – Amarelo Alerta (atenção)
+
+Sugestões de uso:
+Navbar e botões primários: #4169E1
+Fundo da página: #F8F9FA ou #E9ECEF
+Botões de destaque ou hover: #FF6F00
+Cards e blocos de conteúdo: #FFFFFF com sombra suave
+Texto: #343A40 (principal) / #6C757D (secundário)
+
+***********************************************************************************************************************************
