@@ -85,29 +85,25 @@
                 <li>Aplicação de princípios de segurança da informação</li>
             </ul>
         </div>
+        <button id="trocarFormacao">Trocar Formação</button>
     </div>
-    <button id="trocarFormacao">Trocar Formação</button>
-    <div class="dados">
-        <h2>Técnologias</h2>
-        <p></p>
-    </div>
-    <div class="dados">
-        <h2>Redes Sociais</h2>
-        <p></p>
-    </div>
-    <div class="dados">
+    <div class="dados hobbies">
         <h2>Hobbies</h2>
-        <p>Como todo bom esteriotipo de nerd meus hobbies envolvem principalmente jogar, ler obras em quadrinhos(HQs, Mangas e Manwhas) mas também sou fisicamente ativo indo constantemente a academia e periodicamente pratico taekwondo desde meus 13 anos</p>
+        <p>Como todo bom estereótipo de nerd, meus hobbies envolvem principalmente quadrinhos e jogos. Gosto de me desafiar em títulos que exigem paciência e estratégia, como soulslikes, metroidvanias e até um bom hack and slash. Meu último jogo platinado, inclusive, foi Sekiro: Shadows Die Twice — uma verdadeira obra-prima da FromSoftware à qual dediquei muitas horas com orgulho e sem nenhum arrependimento.</p>
+        <iframe src="https://www.youtube.com/embed/z-M8CR2Jqz4?si=xjC_wG5_KULmF7VN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sekiro"></iframe>
+        <p>Além de passatempos mais sedentários, também pratico esportes e frequento a academia constantemente. Vou à academia ao menos três vezes por semana e pratico taekwondo às terças e quintas. No passado, também pratiquei outros esportes como natação, futsal e muay thai.</p>
+        <h2>Redes Sociais</h2>
+        <p>Embora não seja tão ativo nas minhas redes sociais, ocasionalmente compartilho algo ou converso com familiares e amigos no Instagram e Facebook. No entanto, tenho postado com mais frequência alguns dos meus trabalhos no LinkedIn e GitHub, como parte do meu desenvolvimento profissional.</p>
     </div>
-    <script>
-        const botoao = document.getElementById("trocarFormacao");
-        const formacoes = document.querySelectorAll(".formação");
-        let atual = 0;
-        botoao.addEventListener("click", () => {
-            formacoes[atual].classList.remove("base");
-            atual = (atual + 1) % formacoes.length;
-            formacoes[atual].classList.add("base");
-        });
-    </script>
 </body>
+<script>
+    const botoao = document.getElementById("trocarFormacao");
+    const formacoes = document.querySelectorAll(".formação");
+    let atual = 0;
+    botoao.addEventListener("click", () => {
+        formacoes[atual].classList.remove("base");
+        atual = (atual + 1) % formacoes.length;
+        formacoes[atual].classList.add("base");
+    });
+</script>
 </html>
