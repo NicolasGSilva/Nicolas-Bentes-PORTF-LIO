@@ -35,7 +35,6 @@
     white-space: normal;
 }
 body{
-    margin-bottom: 50px;
     width: 100%;
     height: auto;
     background-color: var(--fundoconteudo);
@@ -79,6 +78,8 @@ nav li{
     color: #FFFFFF;
 }
 nav a{
+    font-family: var(--nav);
+    font-size: 3.5vh;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -96,12 +97,16 @@ nav ul a:hover{
     height: auto;
     background-color: var(--fundoconteudo);
     box-shadow: 2px 2px 5px var(--sombramenu);
+    font-size: 2vh;
 }
 .dropmenu li{
     margin: 0;
     font-size: 2vh;
     text-align: center;
     list-style: none;
+}
+.dropmenu a{
+    font-size: 2.5vh;
 }
 .dropmenu a:hover{
     padding: 0;
@@ -523,6 +528,180 @@ nav ul a:hover{
     display: flex;
     margin: 0 auto;
 }
+/*PROGRAMAÇÃO*/
+.steakstudios, .portfolio{
+    width: 100%;
+    margin: 20px auto 30px;
+
+}
+.steakstudios h2, .portfolio h2{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: var(--titulos);
+    font-size: 5vh;
+    text-align: center;
+    color: #FFFFFF;
+}
+.steakstudios p, .portfolio p{
+    width: 90%;
+    margin: 0 auto;
+    font-family: var(--texto);
+    font-size: 2vh;
+    text-align: justify;
+    color: #FFFFFF;
+}
+.steakstudios iframe, .portfolio iframe{
+    display: block;
+    width: 70%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 15px auto 0;
+    padding: 10px;
+    background-color: var(--menu);
+    box-shadow: 5px 5px var(--sombramenu);
+    border-radius: 15px;
+    transition: 2s;
+}
+.steakstudios iframe:hover, .portfolio iframe:hover{
+    background-color: var(--ação);
+    box-shadow: 10px 10px 5px var(--sombramenu);
+    transition: 2s;
+}
+/*MÍDIA*/
+.projetos{
+    margin: 10px auto;
+    width: 90%;
+}
+.projetos h1{
+    font-family: var(--titulos);
+    font-size: 5vh;
+    color: #FFFFFF;
+    text-align: center;
+}
+.projetos p{
+    font-family: var(--texto);
+    font-size: 2.5vh;
+    color: #FFFFFF;
+    text-align: justify;
+}
+.edproj{
+    display: flex;
+    width: 95%;
+    margin-bottom: 10px;
+}
+.edimagem{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    justify-items: center;
+}
+.edimagem h2{
+    margin-bottom: 15px;
+    font-family: var(--titulos);
+    font-size: 4vh;
+    text-align: center;
+    color: #FFFFFF;
+}
+.edimagem p{
+    margin-bottom: 10px;
+    font-family: var(--texto);
+    font-size: 2vh;
+    text-align: justify;
+    color: #FFFFFF;
+}
+.edimagem img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.edcandidatos{
+    display: grid;
+    grid-template-columns: repeat(2, 0.21fr);
+    justify-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.edcandidatos p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--texto);
+    font-size: 2vh;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+.edcandidatos img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.edcandidatos img:hover {
+    transform: scale(1.05);
+}
+
+
+.mockup{
+    justify-items: center;
+}
+.mockup p{
+    margin: 15px auto 15px;
+    font-family: var(--textosecundario);
+    font-size: 2.5vh;
+    text-align: center;
+}
+.mockup img{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+.edvideos{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    justify-items: center;
+}
+/*FOOTER*/
+footer{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--menu);
+}
+.linkgithub, .linkyt{
+    display: flex;
+    align-items: center; /* Alinha texto e imagem verticalmente no centro */
+    justify-content: center; /* Centraliza tudo no meio do footer */
+    flex-wrap: wrap;
+}
+.linkgithub a, .linkyt a{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: var(--textosecundario);
+    font-size: 2vh;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    gap: 10px;
+}
+.qrcode{
+    width: 100px;
+    height: auto;
+    position: relative;
+    right: 0;
+}
+.qrcode:hover{
+    transform: scale(1.2);
+}
 /*RESPONSIVIDADE*/
 @media (max-width:1020px) {
 /*HEADER*/
@@ -640,5 +819,23 @@ nav ul a:hover{
         width: auto;
     }
 /*PROGRAMAÇÃO*/
+    .steakstudios p, .portfolio p{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2.4vh;
+        text-align: justify;
+    }
+    .steakstudios iframe, .portfolio iframe{
+        width: 95%;
+    }
 /*MÍDIA*/
+
+    .edcandidatos {
+        grid-template-columns: 1fr; /* 1 coluna no celular */
+    }
+
+    .edcandidatos img {
+        width: 90%; /* Imagem ocupa quase toda a largura no celular */
+    }
+/*FOOTER*/
 }
